@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ("Blackbean", 0);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Morningstar", 0);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Impossible", 0);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Blackbean", FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Morningstar", FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Impossible", FALSE);
