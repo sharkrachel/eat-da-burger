@@ -14,6 +14,7 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
+//link controller file
 var routes = require("./controllers/burgers_controller");
 app.use("/", routes);
 
