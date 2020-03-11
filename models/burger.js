@@ -8,13 +8,24 @@ var burger = {
             })
         })
     },
-    update: function(id, cb) {
-        orm.update("burgers", id, cb)
+    update: function(id) {
+        return new Promise (function(resolve, reject) {
+            orm.update("burgers", id, function(res) {
+                // reject(new Error("error in update"));
+                resolve(res);
+            })
+        })
+        // orm.update("burgers", id, cb)
 
     },
 
-    add: function(name, cb) {
-        orm.add("burgers", name, cb)
+    add: function(name) {
+        return new Promise (function(resolve, reject) {
+            orm.add("burgers", name, function(res) {
+                resolve(res)
+            });
+        })
+        // orm.add("burgers", name, cb)
     }
 }
 
